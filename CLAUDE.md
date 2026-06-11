@@ -1,6 +1,6 @@
 # Falling-Sand Alchemy — first game out of the lab
 
-Status: research surface (2026-06-11). No code yet — scaffold happens after stack alignment with Matt.
+Status: aligned + scaffolded (2026-06-11). Decisions locked with Matt — see `PLAN.md` (vanilla TS + modern CSS, re-spined roster, Tone.js audio, web→Capacitor/Tauri targets). Public repo: https://github.com/matthew-kissinger/falling-sand-alchemy. Next: v0.1 build order step 1 (sim core port + density fix).
 
 ## What this is
 
