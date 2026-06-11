@@ -1,0 +1,13 @@
+{
+  "name": "Falling Sand Alchemy",
+  "short_name": "Alchemy",
+  "description": "A zen falling-sand game about transmutation.",
+  "start_url": ".",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#0c0a08",
+  "theme_color": "#0c0a08",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

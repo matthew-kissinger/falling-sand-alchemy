@@ -1,6 +1,6 @@
 # Falling-Sand Alchemy — first game out of the lab
 
-Status: aligned + scaffolded (2026-06-11). Decisions locked with Matt — see `PLAN.md` (vanilla TS + modern CSS, re-spined roster, Tone.js audio, web→Capacitor/Tauri targets). Public repo: https://github.com/matthew-kissinger/falling-sand-alchemy. Next: v0.1 build order step 1 (sim core port + density fix).
+Status: v0.1 BUILT (2026-06-11). All seven PLAN.md build steps landed in one pass: pure sim core (34 elements, unified `moveByDensity`, data-driven rule table, 40-discovery codex, Magnum Opus chain), WebGL2 renderer port + 2D fallback, Tone.js generative audio, diegetic chrome (desktop apothecary cabinet / mobile phial strip, in-flow parchment codex, native dialogs), 11 trials with achievements, localStorage persistence behind `src/platform/`. 18 Vitest sim tests green. Deployed via GitHub Pages (`.github/workflows/deploy.yml`): https://matthew-kissinger.github.io/falling-sand-alchemy/. Design note from Matt mid-build: first chrome pass was too close to the prototype's mobile dock and ignored PC ergonomics — redesigned to responsive cabinet/strip split; keep both form factors first-class from here on.
 
 ## What this is
 

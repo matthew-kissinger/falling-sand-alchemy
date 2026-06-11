@@ -2,7 +2,9 @@
 
 A zen falling-sand game about transmutation. Pour, mix, burn, and distill pixel materials on an alchemist's bench; every reaction you cause for the first time is inscribed into a codex, building toward the Magnum Opus.
 
-**Status: pre-v0.1.** The playable prototypes live in [`reference/`](reference/) (single-file HTML — open in a browser). The rebuild from those prototypes is being planned in the design docs below.
+**Status: v0.1.** Play it at **https://matthew-kissinger.github.io/falling-sand-alchemy/** — deployed from `main` via GitHub Pages. The original prototypes live in [`reference/`](reference/) (single-file HTML — open in a browser).
+
+v0.1 ships: 34-element re-spined roster with one unified density rule (sand finally sinks through water; everything floats on mercury), a data-driven reaction table with 40 codex discoveries ending in a real four-step Magnum Opus (calcine → dissolve → conjoin → coagulate), WebGL2 bloom pipeline with Canvas-2D fallback, generative Tone.js audio (Eno-drift pad + sim-driven noise textures + pentatonic event chimes), 11 freely-selectable trial scenarios with achievements (first clear, best time, untouched), and localStorage persistence. Desktop gets a full apothecary cabinet (every reagent visible, hotkeys engraved, arrow-key cycling); mobile gets a thumb-reach phial strip.
 
 ## Design pillars
 
@@ -27,7 +29,7 @@ npm run build    # type-check + production build (relative base, itch.io-ready)
 npm test         # vitest
 ```
 
-Planned layout: `src/sim/` (pure, dependency-free simulation core), `src/render/` (WebGL2 blit + post pipeline), `src/audio/` (generative engine), `src/ui/` (bench chrome).
+Layout: `src/sim/` (pure, dependency-free simulation core — elements, data-driven rules, world, stats), `src/render/` (WebGL2 blit + post pipeline, 2D fallback), `src/audio/` (Tone.js generative engine), `src/ui/` (bench chrome: cabinet, codex, trials, fx), `src/platform/` (storage/haptics adapter seam for Capacitor/Tauri later).
 
 ## License
 
