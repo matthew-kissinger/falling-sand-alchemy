@@ -1,0 +1,37 @@
+/* Token layer — ink / parchment / brass / verdigris. Diegetic lab, not web UI.
+   No glass panels, no backdrop-blur, no floating chrome. */
+@layer reset, tokens, scene;
+
+@layer reset {
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+}
+
+@layer tokens {
+  :root {
+    --ink: #0c0a08;
+    --parchment: #e8dcc3;
+    --brass: #c9a227;
+    --brass-dim: #8a6f4d;
+    --verdigris: #4a7a6a;
+    --dim: #9a8e76;
+  }
+}
+
+@layer scene {
+  body {
+    background: var(--ink);
+    color: var(--parchment);
+    overflow: hidden;
+    user-select: none;
+  }
+  #bench { position: fixed; inset: 0; }
+  #scene {
+    position: absolute;
+    inset: 0;
+    display: block;
+    image-rendering: pixelated;
+    touch-action: none;
+    cursor: crosshair;
+  }
+}
