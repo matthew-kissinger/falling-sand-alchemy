@@ -14,5 +14,8 @@
     "noEmit": true,
     "types": ["vite/client"]
   },
-  "include": ["src"]
+  "include": ["src"],
+  // record.ts and proto.ts are Node-side scripts (bundled standalone via
+  // esbuild); the project config is browser-typed, so they opt out.
+  "exclude": ["src/demos/record.ts", "src/demos/proto.ts"]
 }

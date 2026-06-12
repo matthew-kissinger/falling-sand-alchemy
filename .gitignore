@@ -4,3 +4,7 @@ dist/
 .DS_Store
 .playwright-mcp/
 release-artifacts/
+video-out/
+score/.venv/
+score/__pycache__/
+score/out/

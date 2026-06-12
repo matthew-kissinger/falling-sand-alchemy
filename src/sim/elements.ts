@@ -97,7 +97,7 @@ reg(def({ id: IRON, key: 'iron', name: 'iron', color: [104, 108, 114], glow: 0, 
 reg(def({ id: GOLD, key: 'gold', name: 'gold', color: [236, 196, 64], glow: 70, move: 'powder', density: 95, fluidity: 0, group: 'prima', shelf: true, hotkey: 'f' }))
 reg(def({ id: CALX, key: 'calx', name: 'calx', color: [188, 120, 84], glow: 0, move: 'powder', density: 30, fluidity: 0, group: 'products', shelf: false }))
 reg(def({ id: AQUA, key: 'aqua-vitae', name: 'aqua vitae', color: [196, 226, 232], glow: 26, move: 'liquid', density: 8, fluidity: 5, group: 'prima', shelf: true, hotkey: 'g' }))
-reg(def({ id: AZOTH, key: 'azoth', name: 'azoth', color: [120, 220, 190], glow: 90, move: 'liquid', density: 27, fluidity: 3, group: 'products', shelf: false }))
+reg(def({ id: AZOTH, key: 'azoth', name: 'azoth', color: [96, 214, 132], glow: 90, move: 'liquid', density: 27, fluidity: 3, group: 'products', shelf: false }))
 reg(def({ id: REBIS, key: 'rebis', name: 'rebis', color: [224, 160, 220], glow: 80, move: 'liquid', density: 50, fluidity: 2, group: 'products', shelf: false }))
 reg(def({ id: SPIRIT, key: 'spirit-flame', name: 'spirit flame', color: [150, 190, 255], glow: 230, move: 'gas', density: 1, fluidity: 0, group: 'products', shelf: false }))
 

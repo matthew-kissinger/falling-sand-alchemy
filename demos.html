@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Falling Sand Alchemy — Video Experiment Bench</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #d8cdb8;
+      --ink-dim: #9a8f7c;
+      --paper: #14110d;
+      --card: #1b1712;
+      --brass: #c9a45c;
+      --rule: #3a332a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Spectral', serif;
+      font-weight: 300;
+      line-height: 1.55;
+    }
+    header.page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 40px 24px 8px;
+    }
+    h1 {
+      font-family: 'Marcellus', serif;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--brass);
+      font-size: 26px;
+      margin: 0 0 6px;
+    }
+    .sub { color: var(--ink-dim); max-width: 72ch; font-size: 15px; }
+    .sub b { color: var(--ink); font-weight: 400; }
+    .legend {
+      margin: 18px 0 0;
+      font-size: 13px;
+      color: var(--ink-dim);
+      border: 1px solid var(--rule);
+      padding: 10px 14px;
+      border-radius: 3px;
+    }
+    .legend code { color: var(--brass); font-family: inherit; }
+    #cards {
+      max-width: 1180px;
+      margin: 24px auto 80px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+      gap: 28px;
+    }
+    @media (max-width: 600px) { #cards { grid-template-columns: 1fr; } }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 18px 18px 14px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card h2 {
+      font-family: 'Marcellus', serif;
+      font-weight: 400;
+      font-size: 18px;
+      letter-spacing: 0.06em;
+      color: var(--brass);
+      margin: 0 0 4px;
+    }
+    .card h2 .num { color: var(--ink-dim); margin-right: 8px; }
+    .blurb { font-size: 14.5px; margin: 0 0 12px; color: var(--ink); }
+    .stage { position: relative; }
+    canvas {
+      display: block;
+      width: 100%;
+      image-rendering: pixelated;
+      border: 1px solid #000;
+      background: #0e0c0a;
+    }
+    .caption {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      padding: 5px 10px;
+      font-size: 13px;
+      font-style: italic;
+      color: #efe6d2;
+      background: linear-gradient(transparent, rgba(0,0,0,0.72));
+      pointer-events: none;
+      min-height: 26px;
+    }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 8px 0 10px;
+      font-size: 12.5px;
+      color: var(--ink-dim);
+    }
+    .toolbar button {
+      background: none;
+      border: 1px solid var(--rule);
+      color: var(--brass);
+      font-family: 'Spectral', serif;
+      font-size: 12.5px;
+      padding: 3px 12px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .toolbar button:hover { border-color: var(--brass); }
+    .discs { flex: 1; text-align: right; font-style: italic; color: #b9a86f; min-height: 1.2em; }
+    details {
+      border-top: 1px solid var(--rule);
+      padding-top: 8px;
+      font-size: 13.5px;
+      color: var(--ink-dim);
+    }
+    details summary {
+      cursor: pointer;
+      color: var(--ink);
+      font-size: 13.5px;
+      letter-spacing: 0.04em;
+    }
+    details ol { margin: 8px 0 4px; padding-left: 20px; }
+    details li { margin: 3px 0; }
+    kbd {
+      font-family: inherit;
+      color: var(--brass);
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      padding: 0 5px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header class="page">
+    <h1>VIDEO EXPERIMENT BENCH</h1>
+    <p class="sub">
+      Ten staged experiments for the YouTube recording session. Every panel below is the
+      <b>real simulation core</b> (<code>src/sim/</code>) running live — same elements, same
+      rule table, same RNG class — with the setup painted programmatically and timed actions
+      (pours, sparks, erasures) fired on a frame clock. What you see here is what the game
+      will do. Each card folds out the exact in-game steps to film it.
+    </p>
+    <p class="legend">
+      In-game palette hotkeys: water <code>1</code> · sand <code>2</code> · fire <code>3</code> ·
+      oil <code>4</code> · lava <code>5</code> · ice <code>6</code> · clay <code>7</code> ·
+      plant <code>8</code> · spore <code>9</code> · wax <code>0</code> · stone <code>=</code> ·
+      erase <code>e</code> · salt <code>q</code> · acid <code>w</code> · lye <code>r</code> ·
+      mercury <code>a</code> · sulphur <code>s</code> · iron <code>d</code> · gold <code>f</code> ·
+      aqua vitae <code>g</code> · pause <code>Space</code>
+    </p>
+  </header>
+  <main id="cards"></main>
+  <script type="module" src="./src/demos/demos.ts"></script>
+</body>
+</html>
