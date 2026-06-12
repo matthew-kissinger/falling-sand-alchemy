@@ -157,7 +157,7 @@ export const DISCOVERIES: Discovery[] = [
   d('germ', 'Germination', 'spore + water', 'A sleeping seed asks for rain.', 'The Garden'),
   d('myc', 'Mycelium', 'spore + plant', 'Drifting motes creep along living stems.', 'The Garden'),
   d('photo', 'Photosynthesis', 'plant + water', 'Leaves drink, and multiply.', 'The Garden'),
-  d('cultivate', 'Cultivate', 'spore + clay + water', 'Seed, soil, and rain — the old triad.', 'The Garden'),
+  d('cultivate', 'Cultivate', 'spore + clay + water', 'Seed, soil, and rain - the old triad.', 'The Garden'),
   d('fertile', 'Fertile Ground', 'plant + ash', 'The burnt field feeds the next harvest.', 'The Garden'),
   d('wither', 'Wither', 'acid + plant', 'The venom finds the garden.', 'The Garden'),
   d('salted', 'Salted Earth', 'brine + plant', 'Nothing grows where the bitter water falls.', 'The Garden'),
@@ -173,7 +173,7 @@ export const DISCOVERIES: Discovery[] = [
   d('congeal', 'Congeal', 'molten wax → wax', 'What melted remembers its shape.', 'Fire & Earth'),
   d('slip', 'Slip', 'clay + water', 'Earth drinks, and softens.', 'Fire & Earth'),
   d('kiln', 'Kiln', 'mud + heat', 'Soft earth, fired hard.', 'Fire & Earth'),
-  d('marsh', 'Marsh Fire', 'marsh gas + fire', 'Will-o’-the-wisp — the marsh exhales flame.', 'Fire & Earth'),
+  d('marsh', 'Marsh Fire', 'marsh gas + fire', 'Will-o’-the-wisp - the marsh exhales flame.', 'Fire & Earth'),
   d('detonate', 'Detonation', 'fire + sulphur', 'Yellow brimstone. One spark.', 'Fire & Earth'),
   // IV. The Salt Path
   d('dissolve', 'Dissolve', 'salt + water', 'White crystals vanish into the deep.', 'The Salt Path'),
@@ -181,7 +181,7 @@ export const DISCOVERIES: Discovery[] = [
   d('deice', 'De-Ice', 'salt + ice', 'White crystals bite through winter.', 'The Salt Path'),
   d('potash', 'Potash', 'ash + water', 'The fire’s leavings steep into caustic.', 'The Salt Path'),
   d('sapon', 'Saponify', 'lye + oil', 'Caustic and fat become the cleanser.', 'The Salt Path'),
-  d('titrate', 'Titration', 'acid + lye', 'Venom meets caustic — salt and water remain.', 'The Salt Path'),
+  d('titrate', 'Titration', 'acid + lye', 'Venom meets caustic - salt and water remain.', 'The Salt Path'),
   d('corrode', 'Corrosion', 'acid + stone', 'Green venom gnaws at rock.', 'The Salt Path'),
   d('neutral', 'Neutralize', 'acid + lava', 'Venom and fire’s blood cancel to stone.', 'The Salt Path'),
   // V. The Great Work

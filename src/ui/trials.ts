@@ -50,7 +50,7 @@ export const TRIALS: TrialDef[] = [
   },
   {
     key: 'ignite', need: 'ignite', toolkit: [FIRE],
-    hint: ['oil carries flame far from the spark', 'drop fire anywhere on the oil channel — the burn travels into the seal on its own'],
+    hint: ['oil carries flame far from the spark', 'drop fire anywhere on the oil channel - the burn travels into the seal on its own'],
     zone: [0.44, 0.7, 0.62, 0.86],
     build(w) { const { rect } = helpers(w); rect(0.06, 0.86, 0.94, 0.87, STONE); rect(0.08, 0.8, 0.58, 0.85, OIL) },
   },
@@ -86,7 +86,7 @@ export const TRIALS: TrialDef[] = [
   },
   {
     key: 'distill', need: 'distill', toolkit: [SALT],
-    hint: ['salt the pool — bitter water sinks below sweet', 'make brine with salt, then erase the stone plug under the pool. the heavy brine drains first, onto the lava'],
+    hint: ['salt the pool - bitter water sinks below sweet', 'make brine with salt, then erase the stone plug under the pool. the heavy brine drains first, onto the lava'],
     zone: [0.38, 0.74, 0.62, 0.87],
     build(w) {
       const { fx, fy, rect, box } = helpers(w)
@@ -99,7 +99,7 @@ export const TRIALS: TrialDef[] = [
   },
   {
     key: 'potash', need: 'potash', toolkit: [FIRE],
-    hint: ['burn from below — ash must reach the pool', 'light the grove at its base. fire climbs, and ash rains through the gap into the water'],
+    hint: ['burn from below - ash must reach the pool', 'light the grove at its base. fire climbs, and ash rains through the gap into the water'],
     zone: [0.34, 0.66, 0.66, 0.84],
     build(w) {
       const { rect, box } = helpers(w)
@@ -112,13 +112,13 @@ export const TRIALS: TrialDef[] = [
   },
   {
     key: 'marsh', need: 'marsh', toolkit: [CLAY, WATER, PLANT, SPORE, FIRE],
-    hint: ['make a marsh, then wait for it to breathe', 'mix clay and water into mud, root plants in it, let them rot into rising gas — and meet it with fire in the seal'],
+    hint: ['make a marsh, then wait for it to breathe', 'mix clay and water into mud, root plants in it, let them rot into rising gas - and meet it with fire in the seal'],
     zone: [0.32, 0.26, 0.68, 0.48],
     build(w) { const { box } = helpers(w); box(0.24, 0.55, 0.76, 0.88) },
   },
   {
     key: 'magnum', need: 'coagulate', toolkit: [IRON, FIRE, AQUA, MERCURY, SULPHUR],
-    hint: ['the Great Work: calcine, dissolve, conjoin, coagulate', 'burn iron to red calx · drown the calx in aqua vitae · feed the green water quicksilver · then sulphur, and flame — but never let sulphur touch the flame'],
+    hint: ['the Great Work: calcine, dissolve, conjoin, coagulate', 'burn iron to red calx · drown the calx in aqua vitae · feed the green water quicksilver · then sulphur, and flame - but never let sulphur touch the flame'],
     zone: [0.32, 0.5, 0.68, 0.83],
     build(w) { const { box } = helpers(w); box(0.3, 0.45, 0.7, 0.85) },
   },

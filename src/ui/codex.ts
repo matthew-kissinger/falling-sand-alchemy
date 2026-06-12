@@ -35,7 +35,7 @@ export class Codex {
         div.className = 'entry'
         div.id = 'entry-' + i
         const known = this.found.has(d.key)
-        div.innerHTML = `<div class="num">${roman(i)}</div><div class="name">${known ? d.name : '— — —'}</div><div class="sub">${known ? d.recipe + ' — ' + d.hint : d.hint}</div>`
+        div.innerHTML = `<div class="num">${roman(i)}</div><div class="name">${known ? d.name : '— — —'}</div><div class="sub">${known ? d.recipe + ' - ' + d.hint : d.hint}</div>`
         if (known) div.classList.add('found')
         this.list.appendChild(div)
       })
@@ -55,7 +55,7 @@ export class Codex {
       const name = el.querySelector('.name')
       const sub = el.querySelector('.sub')
       if (name) name.textContent = d.name
-      if (sub) sub.textContent = d.recipe + ' — ' + d.hint
+      if (sub) sub.textContent = d.recipe + ' - ' + d.hint
       el.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
     }
     this.updateCounts()
