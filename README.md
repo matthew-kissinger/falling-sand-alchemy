@@ -8,6 +8,10 @@ v0.1 ships: 34-element re-spined roster with one unified density rule (sand fina
 
 ## The film
 
+[![Falling Sand Alchemy - a film by Fable 5](https://img.youtube.com/vi/3KW7pHjhFmI/maxresdefault.jpg)](https://www.youtube.com/watch?v=3KW7pHjhFmI)
+
+**Watch: https://www.youtube.com/watch?v=3KW7pHjhFmI**
+
 A 4:34 showcase film — *created, directed, and choreographed by Fable 5 (Claude, Anthropic's AI)*. Every pixel in it is the live simulation: thirteen scenes staged from the engine's measured rules (a volcano waking by the sea, a firedamp blast bringing a meadow down into the old workings, fire climbing great looping vines, the Great Work resolving into gold), recorded headlessly at 4K, captioned in-engine, and scored with an original through-composed felt-piano piece composed, rendered, and mastered by the same pipeline.
 
 The whole pipeline is in this repo: scenes in [`src/demos/`](src/demos/) (open `/demos.html` under `npm run dev` to watch them run live), music in [`score/`](score/), and full reproducibility notes in [`docs/VIDEO_PIPELINE.md`](docs/VIDEO_PIPELINE.md).
