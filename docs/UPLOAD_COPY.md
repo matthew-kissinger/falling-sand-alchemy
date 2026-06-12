@@ -6,10 +6,16 @@ Thumbnail: `video-out/thumbnails/yt_final_A_volcano.png` (1280x720, 562 KB)
 ## Title (use this one)
 
 ```
-Falling Sand Alchemy. Created, directed, and choreographed by Fable 5
+Falling Sand Alchemy - a film by Fable 5
 ```
 
-(70 chars - fits without truncation.)
+(41 chars. Reads as a director credit; the description's first lines carry the
+full "created, directed, and choreographed by Fable 5 (Claude, Anthropic's
+AI)". Alternates if you want a different lean:
+- "An AI made this film. Every pixel is simulated." - max curiosity, game name
+  moves to the description
+- "Falling Sand Alchemy: directed by an AI" - legible to people who don't
+  know the model name)
 
 ## Description (paste whole block)
 
