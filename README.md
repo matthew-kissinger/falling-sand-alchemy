@@ -1,8 +1,10 @@
 # Falling Sand Alchemy
 
-A zen falling-sand game about transmutation. Pour, mix, burn, and distill pixel materials on an alchemist's bench; every reaction you cause for the first time is inscribed into a codex, building toward the Magnum Opus.
+**Play in your browser: https://matthew-kissinger.github.io/falling-sand-alchemy/**
 
-**Status: v0.1.0** ([releases](https://github.com/matthew-kissinger/falling-sand-alchemy/releases)). Play it at **https://matthew-kissinger.github.io/falling-sand-alchemy/** — installable PWA, works offline, deployed from `main` via GitHub Pages. Windows installer and Android APK on the release page. The original prototypes live in [`reference/`](reference/) (single-file HTML — open in a browser).
+A zen falling-sand game about transmutation. Pour, mix, burn, and distill pixel materials on an alchemist's bench; every reaction you cause for the first time is inscribed into a codex, building toward the Magnum Opus. Under the hood: a pure, dependency-free cellular automaton in TypeScript, drawn through a WebGL2 bloom pipeline.
+
+**Status: v0.1.0** ([releases](https://github.com/matthew-kissinger/falling-sand-alchemy/releases)). The web build is an installable PWA — works offline, deployed from `main` via GitHub Pages. Windows installer and Android APK on the release page. The original prototypes live in [`reference/`](reference/) (single-file HTML — open in a browser).
 
 v0.1 ships: 34-element re-spined roster with one unified density rule (sand finally sinks through water; everything floats on mercury), a data-driven reaction table with 40 codex discoveries ending in a real four-step Magnum Opus (calcine → dissolve → conjoin → coagulate), WebGL2 bloom pipeline with Canvas-2D fallback, generative Tone.js audio (Eno-drift pad + sim-driven noise textures + pentatonic event chimes), 11 freely-selectable trial scenarios with achievements (first clear, best time, untouched), and localStorage persistence. Desktop gets a full apothecary cabinet (every reagent visible, hotkeys engraved, arrow-key cycling); mobile gets a thumb-reach phial strip.
 
